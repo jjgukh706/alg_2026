@@ -14,7 +14,7 @@ def multiplication_orders(sizes, vis=None):
     best_cost, best_order = inf, ""
     if vis:
         vis.start_orders()
-    # 경계 i는 Ai와 Ai+1 사이. 경계를 없애는 순서가 곱셈 실행 순서입니다.
+    # 경계 i는 Ai와 Ai+1 사이. 경계를 없애는 순서가 곱셈 실행 순서입니다. 
     # permutations(range(3))은 (0,1,2), (0,2,1), ... 처럼 3!개의 순열을 하나씩 반환합니다.
     # 행렬 자체의 순서는 바꾸지 않습니다. 행렬 n개 사이의 경계 n-1개를 나열합니다.
     for order in permutations(range(count - 1)):
